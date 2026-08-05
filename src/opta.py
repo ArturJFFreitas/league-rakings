@@ -16,6 +16,8 @@ KEEP_COLUMNS = ["globalRank",
                 "endDate"]
 
 def scrape_opta_league_rankings():
-    df = pd.read_json(URL)
+    response = requests.get(URL, timeout=30)
+    response.raise_for_status()
+    df = pd.DataFrame(response.json())
     df = df[KEEP_COLUMNS].sort_values("globalRank").reset_index(drop=True)
     return df
