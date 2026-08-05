@@ -5,7 +5,7 @@ RELEASE_TAG = 'league-rankings'
 RELEASE_DESCRIPTION = 'Opta Global League Rankings'
 GITHUB_ACCESS_TOKEN_ENV_VAR_NAME = 'CLUB_RANKINGS_TOKEN'
 
-def create_or_update_club_rankings_release(
+def create_or_update_release(
   df, 
   file_name,
   repo_name=REPO_NAME,
