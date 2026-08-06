@@ -1,4 +1,4 @@
-from gh import create_or_update_release
+from gh import create_or_update_release as gh_create_or_update_release
 
 REPO_NAME = 'league-rankings'
 RELEASE_TAG = 'league-rankings'
@@ -13,7 +13,7 @@ def create_or_update_release(
   tag=RELEASE_TAG,
   description=RELEASE_DESCRIPTION
 ):
-  create_or_update_release(
+  gh_create_or_update_release(
     df=df,
     file_name=file_name,
     repo_name=repo_name,
