@@ -1,8 +1,8 @@
 [tool.poetry]
-name = "club-rankings"
+name = "league-rankings"
 version = "0.1.0"
 description = ""
-authors = ["Tony ElHabr <anthonyelhabr@gmail.com>"]
+authors = ["Tony ElHabr <anthonyelhabr@gmail.com>", "Artur Freitas <arturfreitas09@gmail.com>"]
 readme = "README.md"
 
 
