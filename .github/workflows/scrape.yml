@@ -1,5 +1,5 @@
 ## Reference: https://github.com/MarketingPipeline/Python-Selenium-Action
-name: Run club rankings scraper
+name: Run league rankings scraper
 
 on:
   schedule:
