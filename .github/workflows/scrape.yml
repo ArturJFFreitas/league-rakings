@@ -51,15 +51,6 @@ jobs:
       - name: Install project
         run: poetry install --no-interaction
 
-      - name: Install Chrome
-        run: |
-          sudo apt update
-          sudo apt install -y google-chrome-stable libgbm-dev libgtk-3-0 libx11-xcb1
-
-      - name: Check Chrome version
-        run: google-chrome --version
-
-
       - name: Run script
         run: |
           poetry run python src/scrape.py
