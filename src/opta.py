@@ -1,3 +1,4 @@
+import requests
 import pandas as pd
 
 URL = "https://dataviz.theanalyst.com/opta-power-rankings/league-meta.json"
