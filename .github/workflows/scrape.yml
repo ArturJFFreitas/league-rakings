@@ -8,6 +8,8 @@ on:
 
 jobs:
   scrape:
+    permissions: 
+      contents: write
     runs-on: ubuntu-latest
     env:
       CLUB_RANKINGS_TOKEN: ${{ secrets.CLUB_RANKINGS_TOKEN }}
@@ -54,4 +56,5 @@ jobs:
       - name: Run script
         run: |
           poetry run python src/scrape.py
+          
 
