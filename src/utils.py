@@ -3,7 +3,7 @@ from gh import create_or_update_release as gh_create_or_update_release
 REPO_NAME = 'league-rankings'
 RELEASE_TAG = 'league-rankings'
 RELEASE_DESCRIPTION = 'Opta Global League Rankings'
-GITHUB_ACCESS_TOKEN_ENV_VAR_NAME = 'CLUB_RANKINGS_TOKEN'
+GITHUB_ACCESS_TOKEN_ENV_VAR_NAME = 'LEAGUE_RANKINGS_TOKEN'
 
 def create_or_update_release(
   df, 
