@@ -12,7 +12,7 @@ jobs:
       contents: write
     runs-on: ubuntu-latest
     env:
-      CLUB_RANKINGS_TOKEN: ${{ secrets.CLUB_RANKINGS_TOKEN }}
+      LEAGUE_RANKINGS_TOKEN: ${{ secrets.LEAGUE_RANKINGS_TOKEN }}
     steps:
       - uses: actions/checkout@v4
 
